@@ -1,0 +1,22 @@
+@media (max-width: 768px) {
+
+    html,
+    body {
+        width: auto !important;
+        overflow-x: hidden !important;
+    }
+    
+    .card {
+        margin-bottom: 30px;
+        width: 50%;
+    }
+}
+
+
+.row {
+    margin-bottom: 10px;
+}
+
+.card {
+    width: 100%;
+}
