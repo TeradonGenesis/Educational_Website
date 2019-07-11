@@ -15,14 +15,15 @@
 <body>
 
     <!-- Navigation row -->
-    <nav class="navbar navbar-expand-md navbar-dark navbar-fixed-top bg-dark">
-        <div class="container">
-            <a class="navbar-brand" href="#">SmartKids</a>
+    <div class="container-fluid">
+        <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark pl-md-5">
+
+            <a class="navbar-brand pl-md-5" href="#">SmartKids</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#toggleMenu" aria-controls="toggleMenu" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
 
-            <div class="collapse navbar-collapse" id="toggleMenu">
+            <div class="collapse navbar-collapse pr-md-5" id="toggleMenu">
                 <ul class="nav navbar-nav ml-auto">
                     <li class="nav-item active px-2">
                         <a class="nav-link" href="#">Home</a>
@@ -61,14 +62,17 @@
                     </li>
                 </ul>
             </div>
-        </div>
-    </nav>
 
-    <div class="container">
-        <!-- Jumbotron row-->
-        <div class="row header">
+        </nav>
+
+
+
+
+
+        <div class="row header pt-5 pb-5 mt-5 pl-md-5 pr-md-5 ">
             <!-- Jumbotron column-->
-            <div class="col-xs-12 col-md-6">
+
+            <div class="col-12 col-md-6 pl-md-5 promotions">
                 <h1>Experience the classroom</h1>
                 <br />
                 <p>95% gurantee of blalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalala</p>
@@ -78,14 +82,23 @@
 
 
             <!-- Video column-->
-            <div class="col-xs-12 col-md-6">
-
-
-
+            <div class="col-12 col-md-6">
+                <div class="image-container">
+                <img class="animated" src="images/teacher.gif" alt="animated image">
+                
+                <img class="overlay" src="images/glass.png" alt="glass">
+                </div>
             </div>
 
+            
 
         </div>
+    </div>
+
+    <div class="container">
+
+        <!-- Jumbotron row-->
+
 
         <!-- Browse row-->
         <div class="row gradeBrowse">
@@ -127,7 +140,7 @@
                     <img class="card-img-top" src="images/math.png" alt="Card image cap">
                     <div class="card-body bg-warning">
                         <h5 class="card-title">Science</h5>
-                       <a href="#" class="stretched-link"></a>
+                        <a href="#" class="stretched-link"></a>
                     </div>
                 </div>
 
@@ -142,7 +155,7 @@
                 </div>
             </div>
             <div class="col-12 col-md-2 text-center">
-                <div class="card" >
+                <div class="card">
                     <img class="card-img-top" src="images/math.png" alt="Card image cap">
                     <div class="card-body bg-warning">
                         <h5 class="card-title">Chinese</h5>
@@ -151,7 +164,7 @@
                 </div>
             </div>
             <div class="col-12 col-md-2 text-center">
-                <div class="card" >
+                <div class="card">
                     <img class="card-img-top" src="images/math.png" alt="Card image cap">
                     <div class="card-body bg-warning">
                         <h5 class="card-title">Melayu</h5>
@@ -161,29 +174,65 @@
             </div>
 
         </div>
-        
+
         <!-- Testimonials row -->
-        <div class = "row testimonial">
-            <div class = "col-12 col-md-4">
+        <div class="row testimonial pl-md-5 p-md-5">
+            <div class="col-12 col-md-4">
                 Facebook Likes
             </div>
-            
-            <div class = "col-12 col-md-4">
+
+            <div class="col-12 col-md-4">
                 Teacher reviews
             </div>
-            
-            <div class = "col-12 col-md-4">
+
+            <div class="col-12 col-md-4">
                 Parents reviews
             </div>
         </div>
-        
+
+        <div class="row bg-dark pt-5 pb-5 pl-md-5 pr-md-5">
+            <div class="col-12 col-md-12 footer">
+                <div class="row">
+                    <div class="col-12 col-md-4">
+
+                        <strong>SmartKids</strong><br />
+                        <p>For all your early education needs</p><br />
+                        <br />
+                        <p>support@smartkids.asia</p>
+                    </div>
+                    <div class="col-6 col-md-2">
+                        <h4>SUBJECTS</h4><br />
+                        <a href=#>Math</a><br />
+                        <a href=#>Science</a><br />
+                        <a href=#>English</a><br />
+                        <a href=#>Chinese</a><br />
+                        <a href=#>Melayu</a><br /><br />
+                    </div>
+                    <div class="col-6 col-md-2">
+                        <h4>ABOUT US</h4><br />
+                        <a href=#>Why It All Started</a><br />
+                        <a href=#>Our Mission</a><br />
+                    </div>
+                    <div class="col-6 col-md-2">
+                        <h4>JOIN US</h4><br />
+                        <a href=#>Sign Up</a><br />
+                        <a href=#>Log In</a><br />
+                    </div>
+                    <div class="col-6 col-md-2">
+                        <h4>HELP</h4><br />
+                        <a href=#>FAQ</a><br />
+                        <a href=#>Contact</a><br />
+                    </div>
+                </div>
+            </div>
+        </div>
+
     </div>
-    
-    
 
 
 
 
 
+</body>
 
-</body></html>
+</html>
