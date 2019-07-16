@@ -1,3 +1,36 @@
+/*Custom Fonts*/
+@font-face {
+    font-family: 'CastledownHeavy';
+    src: url('../fonts/woff2/castledown-heavy.woff2') format('woff2'),
+        url('../fonts/woff/castledown-heavy.woff') format('woff'),
+        url('../fonts/tff/castledown-heavy.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'CastledownBoldFun';
+    src: url('../fonts/woff2/castledown-bold-fun.woff2') format('woff2'),
+        url('../fonts/woff/castledown-bold-fun.woff') format('woff'),
+        url('../fonts/tff/castledown-heavy-fun.ttf') format('truetype');
+}
+
+h1 {
+    font-family: 'CastledownHeavy';
+    font-size: 70px !important;
+}
+
+h2 {
+    font-family: 'CastledownHeavy';
+    font-size: 36px !important;
+}
+
+.promotions > p {
+ font-family: 'CastledownHeavy';
+    font-size: 24px ;
+}
+
+
+
+
 @media (max-width: 768px) {
 
     html,
@@ -10,15 +43,23 @@
         margin-bottom: 30px;
         width: 50%;
     }
+
+    h1 {
+        font-size: 36px !important;
+    }
+
+    .promotions > p {
+        font-family: 'CastledownHeavy';
+        font-size: 18px;
+    }
+
 }
 
 .navbar {
     background-color: #ff5714;
 }
 
-.header {
-    background-color: aliceblue;
-}
+
 
 .row {
     margin-bottom: 30px;
@@ -46,8 +87,8 @@
     left: 0;
     top: 0;
     width: 100%;
-    
-    
+
+
     padding-left: 15px;
     padding-right: 15px;
 }
@@ -76,6 +117,28 @@ a {
 .btn {
     height: 50px;
     background-color: #8064A2 !important;
+    transition: all 0.3s ease 0s;
+    border-radius: 40px !important;
+}
+
+
+.gradeContainer {
+    
+    font-family: 'CastledownHeavy';
+    -webkit-box-shadow: 0px 3px 0px 5px rgba(176,173,176,1);
+-moz-box-shadow: 0px 3px 0px 5px rgba(176,173,176,1);
+box-shadow: 0px 3px 0px 5px rgba(176,173,176,1);
+
+
+    
+   
+}
+
+.portrait {
+    width:80%;
+    padding-left:10px;
+    padding-right:10px;
+    padding-top:20px;
 }
 
 .prekindergarden {
@@ -107,4 +170,3 @@ a {
     background-color: #1be7ff !important;
     color: #8064A2 !important;
 }
-
