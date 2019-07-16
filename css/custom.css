@@ -7,27 +7,31 @@
 }
 
 @font-face {
-    font-family: 'CastledownBoldFun';
-    src: url('../fonts/woff2/castledown-bold-fun.woff2') format('woff2'),
-        url('../fonts/woff/castledown-bold-fun.woff') format('woff'),
-        url('../fonts/tff/castledown-heavy-fun.ttf') format('truetype');
+    font-family: 'CastledownRegular';
+    src: url('../fonts/woff2/castledown-bold.woff2') format('woff2'),
+        url('../fonts/woff/castledown-bold.woff') format('woff'),
+        url('../fonts/tff/castledown-bold.ttf') format('truetype');
 }
 
 h1 {
     font-family: 'CastledownHeavy';
-    font-size: 70px !important;
+    font-size: 60px !important;
 }
 
 h2 {
     font-family: 'CastledownHeavy';
-    font-size: 36px !important;
+    font-size: 30px !important;
 }
 
 .promotions > p {
  font-family: 'CastledownHeavy';
-    font-size: 24px ;
+    font-size: 22px ;
 }
 
+
+.header {
+    background-color: #ffffff;
+}
 
 
 
@@ -56,14 +60,22 @@ h2 {
 }
 
 .navbar {
-    background-color: #ff5714;
+    background-color: #ffffff;
+    
+    border-bottom: 1px solid #d1d3d3;
 }
 
 
-
-.row {
-    margin-bottom: 30px;
+nav .navbar-nav li a{
+  color: black !important;
+    font-family: 'CastledownRegular';
 }
+
+.navbar-brand{
+  color: black !important;
+    font-family: 'CastledownHeavy';
+}
+
 
 .card {
     width: 100%;
@@ -105,7 +117,7 @@ h2 {
 }
 
 a {
-    text-decoration: none;
+    text-decoration: none !important;
     color: aliceblue;
     display: inline-block;
 }
@@ -115,30 +127,37 @@ a {
 }
 
 .btn {
-    height: 50px;
-    background-color: #8064A2 !important;
+    font-family: 'CastledownRegular';
     transition: all 0.3s ease 0s;
     border-radius: 40px !important;
+    width: 30%;
+    margin-bottom: 20px;
+    margin-top: 20px;
 }
 
+
+.gradeBrowse {
+    background-color: #f8f8ff;
+    padding-top: 20px;
+}
 
 .gradeContainer {
     
     font-family: 'CastledownHeavy';
-    -webkit-box-shadow: 0px 3px 0px 5px rgba(176,173,176,1);
--moz-box-shadow: 0px 3px 0px 5px rgba(176,173,176,1);
-box-shadow: 0px 3px 0px 5px rgba(176,173,176,1);
-
-
+    font-size: 20px;
+   -webkit-box-shadow: 10px 10px 23px -9px rgba(219,219,219,1);
+-moz-box-shadow: 10px 10px 23px -9px rgba(219,219,219,1);
+box-shadow: 10px 10px 23px -9px rgba(219,219,219,1);
+   background-color: #ffffff;
+    padding-bottom:2px;
     
-   
 }
 
 .portrait {
-    width:80%;
+    width:60%;
     padding-left:10px;
     padding-right:10px;
-    padding-top:20px;
+    padding-top:10px;
 }
 
 .prekindergarden {
@@ -153,20 +172,3 @@ box-shadow: 0px 3px 0px 5px rgba(176,173,176,1);
     color: #1be7ff !important;
 }
 
-.prekindergarden:hover {
-    background-color: #e4ff1a !important;
-    color: #8064A2 !important;
-}
-
-
-
-.kindergarden:hover {
-    background-color: #ffb800 !important;
-    color: #8064A2 !important;
-}
-
-
-.primary:hover {
-    background-color: #1be7ff !important;
-    color: #8064A2 !important;
-}
