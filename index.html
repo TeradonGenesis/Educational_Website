@@ -8,10 +8,8 @@
     <link href="css/custom.css" rel="stylesheet" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.7.6/css/mdb.min.css" />
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.7.6/js/mdb.min.js"></script>
-
+    
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
@@ -19,8 +17,8 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
-<body>
-    
+<body class="modal-open">
+
     <!-- Navigation row -->
     <div class="container-fluid">
         <nav class="navbar navbar-expand-md navbar-inverse fixed-top pl-md-5">
@@ -38,14 +36,7 @@
                     <li class="nav-item px-2">
                         <a class="nav-link" href="#">Home</a>
                     </li>
-                    <li class="nav-item dropdown px-2">
-                        <a class="nav-link dropdown-toggle" href="#" id="dropdownGrade" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Select Grade</a>
-                        <div class="dropdown-menu" aria-labelledby="dropdownGrade">
-                            <a class="dropdown-item" href="#">Pre-Kindergarden</a>
-                            <a class="dropdown-item" href="#">Kindergarden</a>
-                            <a class="dropdown-item" href="#">Primary One</a>
-                        </div>
-                    </li>
+
 
                     <li class="nav-item dropdown px-2">
                         <a class="nav-link dropdown-toggle" href="#" id="dropdownSubject" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Subjects</a>
@@ -62,10 +53,7 @@
                         <a class="nav-link" href="#">About Us</a>
                     </li>
                     <li class="nav-item px-2">
-                        <a class="nav-link" href="#">FAQ</a>
-                    </li>
-                    <li class="nav-item px-2">
-                        <a class="nav-link" href="#">Login</a>
+                        <a class="nav-link" data-toggle="modal" data-target="#loginModal" href=#>Login</a>
                     </li>
                     <li class="nav-item px-2">
                         <a class="nav-link" href="#">Sign Up</a>
@@ -74,82 +62,219 @@
             </div>
 
         </nav>
+        .
+
+
+        <!-- Modal -->
+        <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog text-center" role="document">
+                <div class="modal-content">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    <div class="modal-header row">
+
+                        <div class="col-12 col-md-12 text-center">
 
 
 
+                            <h5 class="modal-title text-center" id="exampleModalLabel">Log into SmartKids As</h5>
+                        </div>
 
+                    </div>
+                    <div class="modal-body row">
+                        <div class="gradeBox col-6 col-md-5 offset-md-1">
+                            <a class="gradeContainer rounded border" href="#loginparentsModal" data-toggle="modal" data-dismiss="modal">
+                                <img class="portrait" src="images/prekindergardenPortrait.png" alt="prekindergarden">
+                                <p>Pre-K</p>
+                            </a>
 
-        <div class="row header pt-5 mt-5 pl-md-5 pr-md-5 ">
-            <!-- Jumbotron column-->
+                        </div>
+                        <div class="gradeBox col-6 col-md-5 ">
+                            <a class="gradeContainer rounded border" href="#loginteachersModal" data-toggle="modal" data-dismiss="modal">
+                                <img class="portrait" src="images/prekindergardenPortrait.png" alt="prekindergarden">
+                                <p>Pre-K</p>
+                            </a>
 
-            <div class="col-12 col-md-6 pl-md-5 promotions text-md-left text-center">
-                <h1>Bring every family into your classroom</h1>
-                <br />
-                <p>
-                    Join 95% of U.S. schools using ClassDojo to engage kids and connect with families! Free for teachers, forever.
-
-                </p>
-
-                <button type="button" class="btn btn-purple btn-lg">JOIN US</button>
-
-            </div>
-
-
-
-            <!-- Video column-->
-            <div class="col-12 col-md-6">
-                <div class="image-container">
-                    <img class="animated" src="images/teacher.gif" alt="animated image">
-
-                    <img class="overlay" src="images/slide.png" alt="cover">
-                    <a href=#>
-                        <i class="fa fa-play-circle  whiteiconcolor  fa-5x overlay text-center pt-5 mt-md-5 "></i>
-                    </a>
-
-
+                        </div>
+                    </div>
                 </div>
-            </div>
-
-
-
-        </div>
-
-        <div class="row gradeBrowse mt-3">
-            <div class="col-12 col-md-12  text-center">
-                <h2>BROWSE BY GRADE</h2>
             </div>
         </div>
 
-        <!-- Browse row-->
-        <div class="row gradeBrowse text-center justify-content-md-center mb-3">
+        <!-- Modal Parents log in -->
+        <div class="modal fade" id="loginparentsModal" tabindex="-1" role="dialog" aria-labelledby="parentsModalLabel" aria-hidden="true">
+            <div class="modal-dialog text-center" role="document">
+                <div class="modal-content">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    <div class="modal-header row">
+
+                        <div class="col-12 col-md-12">
+                            <h5 class="modal-title" id="parentsModalLabel">Logging in as Parent</h5>
+                            <img class="portrait pl-md-5 pr-md-5 pl-5 pr-5 " src="images/prekindergardenPortrait.png" alt="prekindergarden">
+
+                        </div>
+                        
+                        
+                    </div>
+                    <div class="modal-body row">
+
+                        <div class="col-10 col-md-10 offset-1 offset-md-1 text-center">
+                            <form>
+                                <div class="form-group mb-md-3">
+                                    <input type="email" class="form-control" id="email1" placeholder="Your email address...">
+                                </div>
+                                <div class="form-group">
+                                    <input type="password" class="form-control" id="tpassword" placeholder="Your password...">
+                                    <p class="text-muted text-md-left text-left">Forgot your password? <a href=#>Click here</a></p>
+                                </div>
+                                <button type="button" class="btn btn-info btn-block ">Login</button>
+                            </form>
+                            <hr/>
+                            <div class="text-center text-muted mb-md-2 mb-2"><p>or use a social network</p></div>
+                            <div class="d-flex justify-content-center social-buttons">
+                                <button class="loginBtn loginBtn--facebook">
+                                    Login with Facebook
+                                </button>
+
+                                <button class="loginBtn loginBtn--google">
+                                    Login with Google
+                                </button>
+                            </div>
+                        </div>
+                    </div>
 
 
-            <div class="gradeBox col-4 col-md-2 ">
-                <div class="gradeContainer rounded border">
-                    <img class="portrait" src="images/prekindergardenPortrait.png" alt="prekindergarden">
-                    <p>Pre-K</p>
                 </div>
-                <a href="#" class="stretched-link"></a>
             </div>
-            <div class="gradeBox rounded col-4 col-md-2">
-                <div class="gradeContainer rounded border">
-                    <img class="portrait" src="images/kindergardenPortrait.png" alt="kindergarden">
-                    <p>K</p>
-                </div>
-                <a href="#" class="stretched-link"></a>
-            </div>
-            <div class="gradeBox rounded col-4 col-md-2">
-                <div class="gradeContainer rounded border">
-                    <img class="portrait" src="images/primary1Portrait.png" alt="parimary1">
-                    <p>P1</p>
-                </div>
-                <a href="#" class="stretched-link"></a>
-            </div>
+        </div>
+        
+        <!-- Modal Teachers log in -->
+        <div class="modal fade" id="loginteachersModal" tabindex="-1" role="dialog" aria-labelledby="teachersModalLabel" aria-hidden="true">
+            <div class="modal-dialog text-center" role="document">
+                <div class="modal-content">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    <div class="modal-header row">
 
+                        <div class="col-12 col-md-12">
+                            <h5 class="modal-title" id="teachersModalLabel">Logging in as Teacher</h5>
+                            <img class="portrait pl-md-5 pr-md-5 pl-5 pr-5 " src="images/prekindergardenPortrait.png" alt="prekindergarden">
+
+                        </div>
+                        
+                        
+                    </div>
+                    <div class="modal-body row">
+
+                        <div class="col-10 col-md-10 offset-1 offset-md-1 text-center">
+                            <form>
+                                <div class="form-group mb-md-3">
+                                    <input type="email" class="form-control" id="temail1" placeholder="Your email address...">
+                                </div>
+                                <div class="form-group">
+                                    <input type="password" class="form-control" id="tpassword1" placeholder="Your password...">
+                                    <p class="text-muted text-md-left text-left">Forgot your password? <a href=#>Click here</a></p>
+                                </div>
+                                <button type="button" class="btn btn-info btn-block ">Login</button>
+                            </form>
+                            <hr/>
+                            <div class="text-center text-muted mb-md-2 mb-2"><p>or use a social network</p></div>
+                            <div class="d-flex justify-content-center social-buttons">
+                                <button class="loginBtn loginBtn--facebook">
+                                    Login with Facebook
+                                </button>
+
+                                <button class="loginBtn loginBtn--google">
+                                    Login with Google
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+        
+    </div>
+
+
+
+    <div class="row header pt-5 mt-5 pl-md-5 pr-md-5 ">
+        <!-- Jumbotron column-->
+
+        <div class="col-12 col-md-6 pl-md-5 promotions text-md-left text-center">
+            <h1>Bring every family into your classroom</h1>
+            <br />
+            <p>
+                Join 95% of U.S. schools using ClassDojo to engage kids and connect with families! Free for teachers, forever.
+
+            </p>
+
+            <button type="button" class="btn btn-default btn-lg btn-info">JOIN US</button>
 
         </div>
+
+
+
+        <!-- Video column-->
+        <div class="col-12 col-md-6">
+            <div class="image-container">
+                <img class="animated" src="images/teacher.gif" alt="animated image">
+
+                <img class="overlay" src="images/slide.png" alt="cover">
+                <a href=#>
+                    <i class="fa fa-play-circle  whiteiconcolor  fa-5x overlay text-center pt-5 mt-md-5 "></i>
+                </a>
+
+
+            </div>
+        </div>
+
+
 
     </div>
+
+    <div class="row gradeBrowse mt-3">
+        <div class="col-12 col-md-12  text-center">
+            <h2>BROWSE BY GRADE</h2>
+        </div>
+    </div>
+
+    <!-- Browse row-->
+    <div class="row gradeBrowse text-center justify-content-md-center mb-3">
+
+
+        <div class="gradeBox col-4 col-md-2 ">
+            <div class="gradeContainer rounded border">
+                <img class="portrait" src="images/prekindergardenPortrait.png" alt="prekindergarden">
+                <p>Pre-K</p>
+            </div>
+            <a href="#" class="stretched-link"></a>
+        </div>
+        <div class="gradeBox rounded col-4 col-md-2">
+            <div class="gradeContainer rounded border">
+                <img class="portrait" src="images/kindergardenPortrait.png" alt="kindergarden">
+                <p>K</p>
+            </div>
+            <a href="#" class="stretched-link"></a>
+        </div>
+        <div class="gradeBox rounded col-4 col-md-2">
+            <div class="gradeContainer rounded border">
+                <img class="portrait" src="images/primary1Portrait.png" alt="parimary1">
+                <p>P1</p>
+            </div>
+            <a href="#" class="stretched-link"></a>
+        </div>
+
+
+    </div>
+
+
 
     <div class="container">
 
@@ -179,8 +304,8 @@
 
             <div class="col-8 offset-2 col-md-2 offset-md-1 mb-5 text-center ">
 
-                <div class="card ">
-                    <a class="img-card top-border english" href=#>
+                <div class="card english">
+                    <a class="img-card" href=#>
                         <img src="./images/englishprofile.png" alt="subjects" />
                     </a>
                     <div class="card-content">
@@ -201,8 +326,8 @@
 
             <div class="col-8 offset-2 col-md-2 offset-md-0 mb-5 text-center ">
 
-                <div class="card ">
-                    <a class="img-card top-border malay" href=#>
+                <div class="card malay ">
+                    <a class="img-card" href=#>
                         <img src="./images/malayprofile.png" alt="subjects" />
                     </a>
                     <div class="card-content">
@@ -224,8 +349,8 @@
 
             <div class="col-8 offset-2 col-md-2 offset-md-0 mb-5 text-center">
 
-                <div class="card">
-                    <a class="img-card top-border chinese" href=#>
+                <div class="card chinese">
+                    <a class="img-card " href=#>
                         <img src="./images/chineseprofile.png" alt="subjects" />
                     </a>
                     <div class="card-content">
@@ -246,8 +371,8 @@
             </div>
             <div class="col-8 offset-2 col-md-2 offset-md-0 mb-5 text-center ">
 
-                <div class="card">
-                    <a class="img-card top-border science" href=#>
+                <div class="card science">
+                    <a class="img-card " href=#>
                         <img src="./images/scienceprofile.png" alt="subjects" />
                     </a>
                     <div class="card-content">
@@ -267,8 +392,8 @@
             </div>
             <div class="col-8 offset-2 col-md-2 offset-md-0 mb-5 text-center ">
 
-                <div class="card">
-                    <a class="img-card top-border math" href=#>
+                <div class="card math">
+                    <a class="img-card" href=#>
                         <img src="./images/mathprofile.png" alt="subjects" />
                     </a>
                     <div class="card-content">
@@ -290,17 +415,25 @@
         </div>
 
         <!-- Testimonials row -->
-        <div class="row testimonial pl-md-5 p-md-5">
-            <div class="col-12 col-md-4">
-                Facebook Likes
-            </div>
+        <div class="row testimonial pl-md-5 p-md-5 text-center">
 
-            <div class="col-12 col-md-4">
-                Teacher reviews
-            </div>
+            <div class="col-12 col-md-12">
 
-            <div class="col-12 col-md-4">
-                Parents reviews
+                <div class="row">
+                    <div class="col-12 col-md-12">
+                        <h1>They love us! </h1>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-12 col-md-6">
+                        <h3>What did the teachers say?</h3>
+                    </div>
+
+                    <div class="col-12 col-md-6">
+                        <h3>What did the parents say?</h3>
+                    </div>
+                </div>
             </div>
         </div>
 
