@@ -1,0 +1,32 @@
+/* Just an excuse to use CSS Grid 😊 */
+#calender-wrapper {
+    padding: 0px;
+    
+}
+
+[id^=calendar],
+[id^=calendar] + h3 {
+    width: 100%;
+}
+
+[id^=calendar] + h3 {
+    text-align: center;
+}
+
+@media only screen and (max-width: 500px) {
+    #calender-wrapper {
+        display: block;
+    }
+
+    [id^=calendar],
+    [id^=calendar] + h3 {
+        width: 100%;
+        max-width: 400px;
+        margin: 1em auto;
+    }
+
+    [id^=calendar] + h3 {
+        display: block;
+        margin-bottom: 2em;
+    }
+}
