@@ -4,7 +4,7 @@ $(document).ready(function() {
    // inspired by http://jsfiddle.net/arunpjohny/564Lxosz/1/
    $('.table-responsive-stack').find("th").each(function (i) {
       
-      $('.table-responsive-stack td:nth-child(' + (i + 1) + ')').prepend('<span class="table-responsive-stack-thead">'+ $(this).text() + ':</span> ');
+      $('.table-responsive-stack td:nth-child(' + (i + 1) + ')').prepend('<span class="table-responsive-stack-thead">'+ $(this).text() + '<br/></span> ');
       $('.table-responsive-stack-thead').hide();
    });
 
@@ -50,7 +50,7 @@ function flexTable(){
     
     $('.table-responsive-stack2').find("th").each(function (i) {
       
-      $('.table-responsive-stack2 td:nth-child(' + (i + 1) + ')').prepend('<span class="table-responsive-stack2-thead">'+ $(this).text() + ':</span> ');
+      $('.table-responsive-stack2 td:nth-child(' + (i + 1) + ')').prepend('<span class="table-responsive-stack2-thead">'+ $(this).text() + '</span>');
       $('.table-responsive-stack2-thead').hide();
    });
 
@@ -90,10 +90,13 @@ function flexTable2(){
 
    }
 // flextable   
-}      
+}
+
+
  
 flexTable();
     flexTable2();
+    
    
 window.onresize = function(event) {
     flexTable();
