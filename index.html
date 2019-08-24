@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
 
 
-    
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
@@ -56,16 +56,188 @@
                         <a class="nav-link" data-toggle="modal" data-target="#loginModal" href=#>Login</a>
                     </li>
                     <li class="nav-item px-2">
-                        <a class="nav-link" href="#">Sign Up</a>
+                        <a class="nav-link" data-toggle="modal" data-target="#signupModal" href=#>Sign Up</a>
                     </li>
                 </ul>
             </div>
 
         </nav>
-        
+
+        <!-- Sign Up Modal -->
+        <div class="modal fade" id="signupModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabelSignUp" aria-hidden="true">
+            <div class="modal-dialog text-center" role="document">
+                <div class="modal-content">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    <div class="modal-header row">
+
+                        <div class="col-12 col-md-12 text-center">
 
 
-        <!-- Modal -->
+
+                            <h5 class="modal-title text-center" id="exampleModalLabelSignUp">Sign Up with SmartKids As</h5>
+                        </div>
+
+                    </div>
+                    <div class="modal-body row">
+                        <div class="gradeBox col-6 col-md-5 offset-md-1">
+                            <a class="gradeContainer rounded border" href="#signupparentsModal" data-toggle="modal" data-dismiss="modal">
+                                <img class="portrait" src="images/prekindergardenPortrait.png" alt="prekindergarden">
+                                <p>Parent</p>
+                            </a>
+
+                        </div>
+                        <div class="gradeBox col-6 col-md-5 ">
+                            <a class="gradeContainer rounded border" href="#signupteachersModal" data-toggle="modal" data-dismiss="modal">
+                                <img class="portrait" src="images/prekindergardenPortrait.png" alt="prekindergarden">
+                                <p>Teacher</p>
+                            </a>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Modal Parents Sign up -->
+        <div class="modal fade" id="signupparentsModal" tabindex="-1" role="dialog" aria-labelledby="parentsModalLabel" aria-hidden="true">
+            <div class="modal-dialog text-center" role="document">
+                <div class="modal-content">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    <div class="modal-header row">
+
+                        <div class="col-12 col-md-12">
+                            <h5 class="modal-title" id="signupParentsModalLabel">Sign Up as Parent</h5>
+                            <img class="portrait pl-md-5 pr-md-5 pl-5 pr-5 " src="images/prekindergardenPortrait.png" alt="prekindergarden">
+
+                            <ul class="nav nav-tabs" role="tablist">
+                                <li class="nav-item">
+                                    <a class="nav-link active" href="#profile" role="tab" data-toggle="tab">profile</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#buzz" role="tab" data-toggle="tab">buzz</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#references" role="tab" data-toggle="tab">references</a>
+                                </li>
+                            </ul>
+
+                        </div>
+
+
+                    </div>
+                    <div class="modal-body row">
+
+                        <div class="col-10 col-md-10 offset-1 offset-md-1 text-center">
+                            <form>
+                                <div class="form-group mb-md-3">
+                                    <input type="text" class="form-control" id="parentsSignUpUsername" placeholder="Your username...">
+                                </div>
+
+                                <div class="form-group mb-md-3">
+                                    <input type="text" class="form-control" id="parentsSignUpEmail" placeholder="Your email...">
+                                </div>
+
+                                <div class="form-group mb-md-3">
+                                    <input type="password" class="form-control" id="parentsSignUpPassword" placeholder="Your password...">
+                                </div>
+
+                                <div class="form-group">
+                                    <input type="password" class="form-control" id="parentsSignUpConfirmPassword" placeholder="Confirm password">
+                                </div>
+
+                                <button type="button" class="btn btn-info btn-block " onclick="startbootstrap-sb-admin-2/index.html">Sign Up</button>
+                            </form>
+                            <hr />
+                            <div class="text-center text-muted mb-md-2 mb-2">
+                                <p>or use a social network</p>
+                            </div>
+                            <div class="d-flex justify-content-center social-buttons">
+                                <button class="loginBtn loginBtn--facebook">
+                                    Sign Up with Facebook
+                                </button>
+
+                                <button class="loginBtn loginBtn--google">
+                                    Sign Up with Google
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal Teachers sign up-->
+        <div class="modal fade" id="signupteachersModal" tabindex="-1" role="dialog" aria-labelledby="teachersModalLabel" aria-hidden="true">
+            <div class="modal-dialog text-center" role="document">
+                <div class="modal-content">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    <div class="modal-header row">
+
+                        <div class="col-12 col-md-12">
+                            <h5 class="modal-title" id="signupTeachersModalLabel">Sign Up as Teacher</h5>
+                            <img class="portrait pl-md-5 pr-md-5 pl-5 pr-5 " src="images/prekindergardenPortrait.png" alt="prekindergarden">
+
+                        </div>
+
+
+                    </div>
+                    <div class="modal-body row">
+
+                        <div class="col-10 col-md-10 offset-1 offset-md-1 text-center">
+                            <form>
+                                <div class="row form-group mb-md-3">
+                                    <input type="text" class="form-control col-12 col-md-6 pr-md-1" id="teacherSignUpUsername" placeholder="First name">
+                                    <input type="text" class="form-control col-12 col-md-6 pl-md-1" id="teacherSignUpUsername" placeholder="Last Name">
+                                </div>
+
+                                <div class="row form-group mb-md-3">
+                                    <input type="text" class="form-control" id="teacherSignUpEmail" placeholder="Your email...">
+                                </div>
+
+                                <div class="row form-group mb-md-3">
+                                    <input type="password" class="form-control" id="teacherSignUpPassword" placeholder="Your password...">
+                                </div>
+
+                                <div class="row form-group">
+                                    <input type="password" class="form-control" id="teacherSignUpConfirmPassword" placeholder="Confirm password">
+                                </div>
+
+                                <button type="button" class="btn btn-info btn-block " onclick="startbootstrap-sb-admin-2/index.html">Sign Up</button>
+                            </form>
+                            <hr />
+                            <div class="text-center text-muted mb-md-2 mb-2">
+                                <p>or use a social network</p>
+                            </div>
+                            <div class="d-flex justify-content-center social-buttons">
+                                <button class="loginBtn loginBtn--facebook">
+                                    Sign Up with Facebook
+                                </button>
+
+                                <button class="loginBtn loginBtn--google">
+                                    Sign Up with Google
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+
+
+
+
+        <!-- Log in Modal -->
         <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div class="modal-dialog text-center" role="document">
                 <div class="modal-content">
@@ -116,8 +288,8 @@
                             <img class="portrait pl-md-5 pr-md-5 pl-5 pr-5 " src="images/prekindergardenPortrait.png" alt="prekindergarden">
 
                         </div>
-                        
-                        
+
+
                     </div>
                     <div class="modal-body row">
 
@@ -132,8 +304,10 @@
                                 </div>
                                 <button type="button" class="btn btn-info btn-block " onclick="startbootstrap-sb-admin-2/index.html">Login</button>
                             </form>
-                            <hr/>
-                            <div class="text-center text-muted mb-md-2 mb-2"><p>or use a social network</p></div>
+                            <hr />
+                            <div class="text-center text-muted mb-md-2 mb-2">
+                                <p>or use a social network</p>
+                            </div>
                             <div class="d-flex justify-content-center social-buttons">
                                 <button class="loginBtn loginBtn--facebook">
                                     Login with Facebook
@@ -150,7 +324,7 @@
                 </div>
             </div>
         </div>
-        
+
         <!-- Modal Teachers log in -->
         <div class="modal fade" id="loginteachersModal" tabindex="-1" role="dialog" aria-labelledby="teachersModalLabel" aria-hidden="true">
             <div class="modal-dialog text-center" role="document">
@@ -165,8 +339,8 @@
                             <img class="portrait pl-md-5 pr-md-5 pl-5 pr-5 " src="images/prekindergardenPortrait.png" alt="prekindergarden">
 
                         </div>
-                        
-                        
+
+
                     </div>
                     <div class="modal-body row">
 
@@ -181,8 +355,10 @@
                                 </div>
                                 <button type="button" class="btn btn-info btn-block " onclick="startbootstrap-sb-admin-2/index.html">Login</button>
                             </form>
-                            <hr/>
-                            <div class="text-center text-muted mb-md-2 mb-2"><p>or use a social network</p></div>
+                            <hr />
+                            <div class="text-center text-muted mb-md-2 mb-2">
+                                <p>or use a social network</p>
+                            </div>
                             <div class="d-flex justify-content-center social-buttons">
                                 <button class="loginBtn loginBtn--facebook">
                                     Login with Facebook
@@ -199,7 +375,7 @@
                 </div>
             </div>
         </div>
-        
+
     </div>
 
 
@@ -480,6 +656,4 @@
 
 
 
-</body>
-
-</html>
+</body></html>
